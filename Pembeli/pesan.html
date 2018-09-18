@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Pesan</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<style type="text/css">
+body{
+    background: url("background/1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    }
+.col{
+    background-color: white;
+    width: 50%;
+    margin-left: 25%;
+}
+h1{
+    color: gray;
+    font-style: italic;
+}
+ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   background-color: #333;
+}
+
+li {
+   float: left;
+}
+
+li a {
+   display: block;
+   color: white;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+}
+
+li a:hover {
+   background-color: #111;
+}
+form{
+    margin: 10px 20px 10px 20px;
+}
+.row{
+    padding: 5px 40px 5px 40px;
+}
+input{
+    width: 100%;
+}
+table{
+    width: 100%;
+}
+td{
+    text-align: left;
+}
+</style>
+</head>
+
+
+<body>
+        <ul>
+            <li><a class="active" href="halaman utama.html">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+        <div style="background: ghostwhite">
+            <h1 style="text-align: center">Pesan</h1>
+        </div>
+        <div class="container">
+            <div class="col">
+                <div class="row">
+                        <form style="text-align: center" action="pesanan.html">
+                            <table>
+                                <tr>
+                                    <td>Nama:</td><td><input type="text" name="nama"></td>
+                                </tr>
+                                <tr>
+                                    <td>No.KTP:</td><td><input type="text" name="noktp"></td>
+                                </tr>
+                                <tr>
+                                    <td>Alamat:</td><td><input type="text" name="alamat"></td>
+                                </tr>
+                                <tr>
+                                    <td>Kode Mobil:</td><td><input type="text" name="kodemobil"></td>
+                                </tr>
+                                <tr>
+                                    <td>Warna :</td>
+                                        <td><select size="1" name="warna" id="warna">
+                                            <option value="1">Hitam</option>
+                                            <option value="2">Putih</option>
+                                            <option value="3">Abu-Abu</option>
+                                            <option value="4">Merah</option>
+                                            <option value="5">Kuning</option>
+                                            <option value="6">Hijau</option>
+                                            <option value="7">Biru</option>
+                                            <option value="8">Orange</option>
+                                            <option value="9">Jingga</option>
+                                            <option value="10">Ungu</option>
+                                        </select></td>
+                                </tr>
+                                <tr>
+                                    <td>Metode Pembayaran :</td>
+                                    <td style="text-align: center;"><input type="radio" name="metodepembayaran" id="Cash" value="L"> Cash</td>
+                                    <td style="text-align: center;"><input type="radio" name="metodepembayaran" id="Credit" value="P"> Credit</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><input type="submit" name="submit" id="submit" value="Submit"></td>
+                                </tr>
+                            </table>
+                                
+                            </div>
+                            
+                            </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
